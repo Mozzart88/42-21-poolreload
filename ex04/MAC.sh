@@ -1,0 +1,1 @@
+ifconfig | grep -Ee 'ether\s' | sed 's/ether[ ]*//' | cut -f2- | sed 's/ $//'
